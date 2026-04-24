@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Mastering JavaScript ES6",
+    "description": "Learn modern JavaScript features like arrow functions, destructuring, and modules.",
+    "image": "https://i.ibb.co/1.jpg",
+    "category": "Programming",
+    "author": "Wasif Hasan",
+    "date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "title": "React Basics for Beginners",
+    "description": "Understand components, props, state, and the React ecosystem.",
+    "image": "https://i.ibb.co/2.jpg",
+    "category": "Frontend",
+    "author": "Arif Almas",
+    "date": "2026-04-02"
+  },
+  {
+    "id": 3,
+    "title": "Advanced CSS Techniques",
+    "description": "Explore Flexbox, Grid, animations, and responsive design.",
+    "image": "https://i.ibb.co/3.jpg",
+    "category": "Design",
+    "author": "Nishad Mahmud",
+    "date": "2026-04-03"
+  },
+  {
+    "id": 4,
+    "title": "Node.js Backend Development",
+    "description": "Build scalable backend services using Node.js and Express.",
+    "image": "https://i.ibb.co/4.jpg",
+    "category": "Backend",
+    "author": "Istiak Ahmed",
+    "date": "2026-04-04"
+  },
+  {
+    "id": 5,
+    "title": "MongoDB Database Guide",
+    "description": "Learn how to design and manage NoSQL databases with MongoDB.",
+    "image": "https://i.ibb.co/5.jpg",
+    "category": "Database",
+    "author": "Rizbe Sohan",
+    "date": "2026-04-05"
+  },
+  {
+    "id": 6,
+    "title": "Full Stack Project Ideas",
+    "description": "Get inspired with real-world full stack project ideas.",
+    "image": "https://i.ibb.co/6.jpg",
+    "category": "Projects",
+    "author": "Arif Hossain",
+    "date": "2026-04-06"
+  },
+  {
+    "id": 7,
+    "title": "Git & GitHub Essentials",
+    "description": "Master version control and collaboration using Git and GitHub.",
+    "image": "https://i.ibb.co/7.jpg",
+    "category": "Tools",
+    "author": "Kayes Mahmud",
+    "date": "2026-04-07"
+  },
+  {
+    "id": 8,
+    "title": "UI/UX Design Principles",
+    "description": "Understand the fundamentals of user interface and experience design.",
+    "image": "https://i.ibb.co/8.jpg",
+    "category": "Design",
+    "author": "Ahmed Forhad",
+    "date": "2026-04-08"
+  },
+  {
+    "id": 9,
+    "title": "Next.js for Production",
+    "description": "Learn how to build fast and SEO-friendly apps using Next.js.",
+    "image": "https://i.ibb.co/9.jpg",
+    "category": "Framework",
+    "author": "Azharul Rasel",
+    "date": "2026-04-09"
+  },
+  {
+    "id": 10,
+    "title": "API Integration Guide",
+    "description": "Understand how to fetch and manage data from APIs effectively.",
+    "image": "https://i.ibb.co/10.jpg",
+    "category": "API",
+    "author": "Mustakim Rahat",
+    "date": "2026-04-10"
+  }
+]
