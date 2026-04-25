@@ -1,8 +1,8 @@
 "use client";
-import { Envelope } from "@gravity-ui/icons";
-import { Button, Input, Label, Modal, Surface, TextField } from "@heroui/react";
+import { CirclePlusFill } from "@gravity-ui/icons";
+import { Button, Input, Label, ListBox, Select, Modal, Surface, TextField } from "@heroui/react";
 
-const AddTask = () => {
+const AddTask = ({ action }) => {
   return (
     <Modal>
       <Button className="my-1" variant="secondary">
@@ -14,33 +14,63 @@ const AddTask = () => {
             <Modal.CloseTrigger />
             <Modal.Header>
               <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
-                <Envelope className="size-5" />
+                <CirclePlusFill className="size-5" />
               </Modal.Icon>
-              <Modal.Heading>Contact Us</Modal.Heading>
+              <Modal.Heading>Add to Task</Modal.Heading>
             </Modal.Header>
             <Modal.Body className="p-6">
               <Surface variant="default">
-                <form className="flex flex-col gap-4">
-                  <TextField className="w-full" name="name" type="text">
-                    <Label>Name</Label>
-                    <Input placeholder="Enter your name" />
+                <form action={action} className="flex flex-col gap-4">
+                  <TextField className="w-full" name="title" type="text">
+                    <Label>Title</Label>
+                    <Input placeholder="Enter your task title" />
                   </TextField>
-                  <TextField className="w-full" name="email" type="email">
-                    <Label>Email</Label>
-                    <Input placeholder="Enter your email" />
+                  <TextField className="w-full" name="description" type="text">
+                    <Label>Description</Label>
+                    <Input placeholder="Write your description" />
                   </TextField>
-                  <TextField className="w-full" name="phone" type="tel">
-                    <Label>Phone</Label>
-                    <Input placeholder="Enter your phone number" />
+
+                  <Select className="w-[256px]" name="select" placeholder="Select one">
+                    <Label>Category</Label>
+                    <Select.Trigger>
+                      <Select.Value />
+                      <Select.Indicator />
+                    </Select.Trigger>
+                    <Select.Popover>
+                      <ListBox>
+                        <ListBox.Item id="programming" textValue="programming">
+                          Programming
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="frontend" textValue="frontend">
+                          Frontend
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="design" textValue="design">
+                          Design
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="backend" textValue="backend">
+                          Backend
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="database" textValue="database">
+                          Database
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="projects" textValue="projects">
+                          Projects
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                      </ListBox>
+                    </Select.Popover>
+                  </Select>
+
+                  <TextField className="w-full" name="author">
+                    <Label>Author</Label>
+                    <Input placeholder="Enter author name" />
                   </TextField>
-                  <TextField className="w-full" name="company">
-                    <Label>Company</Label>
-                    <Input placeholder="Enter your company name" />
-                  </TextField>
-                  <TextField className="w-full" name="message">
-                    <Label>Message</Label>
-                    <Input placeholder="Enter your message" />
-                  </TextField>
+
                   <div className="flex gap-3 mt-3">
                     <Button slot="close" variant="secondary">
                       Cancel

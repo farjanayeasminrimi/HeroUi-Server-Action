@@ -1,5 +1,6 @@
 import AddTask from "@/components/AddTask/AddTask";
 import SingleCard from "@/components/Card/Card";
+import { action } from "@/lib/action";
 import { getCards } from "@/lib/cards";
 
 const Cards = async () => {
@@ -8,7 +9,7 @@ const Cards = async () => {
   return (
     <div className="container mx-auto my-9">
       <h1>All Cards: {cards.length}</h1>
-      <AddTask></AddTask>
+      <AddTask action={action}></AddTask>
       <div className="my-9 grid grid-cols-1 md:grid-cols-3 gap-4">
         {cards.map((card) => (
           <SingleCard key={card.id} card={card}></SingleCard>
